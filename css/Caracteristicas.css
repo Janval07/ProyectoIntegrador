@@ -48,6 +48,17 @@ a:hover {
     max-width: 50em;
 }
 
+/* Cambia el color de todos los enlaces dentro de la lista */
+ul li a {
+  color: #080808; /* Cambia este valor por el color que desees */
+  text-decoration: none; /* Opcional: quita el subrayado */
+}
+
+/* Cambia el color al pasar el mouse sobre el enlace */
+ul li a:hover {
+  color: #7a7a7a; /* Cambia este valor por el color que desees al pasar el mouse */
+}
+
 
 /*
  * Header

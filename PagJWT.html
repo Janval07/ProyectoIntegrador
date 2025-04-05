@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" href="img/microservicios.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/Informacion.css">
+    <title>SOAP</title>
+</head>
+
+<body>
+    <!-- Barra de Navegación -->
+    <nav class="site-header sticky-top py-4 navbar navbar-expand-md navbar-dark bg-dark">
+        <div class="container">
+        <a class="navbar-brand py-2" href="Index.html"> 
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="d-block mx-auto">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="14.31" y1="8" x2="20.05" y2="17.94"></line>
+                <line x1="9.69" y1="8" x2="21.17" y2="8"></line>
+                <line x1="7.38" y1="12" x2="13.12" y2="2.06"></line>
+                <line x1="9.69" y1="16" x2="3.95" y2="6.06"></line>
+                <line x1="14.31" y1="16" x2="2.83" y2="16"></line>
+                <line x1="16.62" y1="12" x2="10.88" y2="21.94"></line>
+            </svg>
+        </a>
+        
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarContent">
+            <ul class="navbar-nav me-auto">
+                <li class="nav-item">
+                    <a class="nav-link py-2 px-3" href="Introduccion.html">Inicio</a>
+                </li>
+                
+                <!-- Menú desplegable para protocolos -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle py-2 px-3" href="#" id="protocolsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Protocolos
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="protocolsDropdown">
+                        <li><a class="dropdown-item" href="PagHTTP.html">HTTP/HTTPS</a></li>
+                        <li><a class="dropdown-item" href="PagSOAP.html">SOAP</a></li>
+                        <li><a class="dropdown-item" href="PagREST.html">REST</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="PagJWT.html">JWT</a></li>
+                        <li><a class="dropdown-item" href="PagJSON.html">JSON Web Token</a></li>
+                    </ul>
+                </li>
+                
+                <!-- Menú desplegable para arquitecturas -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle py-2 px-3" href="#" id="architectureDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Arquitecturas
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="architectureDropdown">
+                        <li><a class="dropdown-item" href="PagMicroservicios.html">Microservicios</a></li>
+                        <li><a class="dropdown-item" href="PagAPI.html">Desarrollo API</a></li>
+                    </ul>
+                </li>
+                
+                <!-- Menú desplegable para contenedores -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle py-2 px-3" href="#" id="containersDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Contenedores
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="containersDropdown">
+                        <li><a class="dropdown-item" href="PagDocker.html">Docker</a></li>
+                        <li><a class="dropdown-item" href="#">Kubernetes</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        </div>
+    </nav>
+    
+
+    <!-- Información -->
+    <div class="position-relative overflow-hidden p-5 p-md-5 m-md-5 text-center bg-light" 
+        style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+        url('https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+            background-size: cover;
+            background-position: center;">
+    <div class="col-md-5 p-lg-5 mx-auto my-5 position-relative text-white">
+        <h1 class="display-4 font-weight-normal">JWT    </h1>
+    </div>
+</div>
+
+<!-- Hero Section -->
+    <section class="hero-section text-center">
+        <div class="container">
+            <p class="lead"></p>
+        </div>
+    </section>
+
+<!-- Sección Multimedia -->
+        <div class="container mb-4">
+            <div class="media-section">
+
+            <h2 class="text-center mb-4"><i class="fas fa-photo-video me-2"></i>Multimedia</h2>
+            
+            <div class="row">
+                <!-- Video 1 -->
+                <div class="col-md-6 mb-4">
+                    <div class="card media-card h-100">
+                        <div class="ratio ratio-16x9">
+                            <iframe src="https://www.youtube.com/embed/eesqK59rhGA" title="YouTube video" allowfullscreen></iframe>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Cómo funciona HTTP</h5>
+                            <p class="card-text">Explicación visual del protocolo HTTP y su funcionamiento básico.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Video 2 -->
+                <div class="col-md-6 mb-4">
+                    <div class="card media-card h-100">
+                        <div class="ratio ratio-16x9">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/3JrY0GcOQ0I?si=mRnlUhfKbjLkwuQd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Diferencias HTTP/HTTPS</h5>
+                            <p class="card-text">Comparación entre los protocolos HTTP y HTTPS.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Galería de Imágenes -->
+            <h4 class="mt-5 mb-3 text-center"><i class="fas fa-images me-2"></i>Galería</h4>
+            <div class="row g-3">
+                <div class="col-6 col-md-3">
+                    <img src="img/diagramaHTTP.webp" 
+                        alt="Diagrama HTTP" 
+                        class="img-fluid rounded gallery-img">
+                </div>
+                <div class="col-6 col-md-3">
+                    <img src="img/encabezadosHTTP.jpg" 
+                        alt="Encabezados HTTP" 
+                        class="img-fluid rounded gallery-img">
+                </div>
+                <div class="col-6 col-md-3">
+                    <img src="img/comparacionHTTP.webp" 
+                        alt="Comparación HTTP/HTTPS" 
+                        class="img-fluid rounded gallery-img">
+                </div>
+                <div class="col-6 col-md-3">
+                    <img src="img/protocoloHTTP.png" 
+                        alt="Protocolo HTTPS" 
+                        class="img-fluid rounded gallery-img">
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- Two Column Layout -->
+<div class="container mb-5">
+    <div class="row">
+        <!-- Columna Izquierda - Conceptos Básicos -->
+        <div class="col-lg-6 pe-lg-4">
+            <!-- Qué es JWT -->
+            <div class="card info-card mb-4">
+                <div class="card-body">
+                    <h2 class="card-title"><i class="fas fa-key me-2"></i>¿Qué es JWT?</h2>
+                    <p>JSON Web Token (JWT) es un estándar abierto (RFC 7519) que define un modo compacto y autocontenido para transmitir información segura entre distintas partes utilizando objetos JSON. Una de las características principales de JWT es que esta información puede ser verificada porque está firmada digitalmente.</p>
+                </div>
+            </div>
+
+            <!-- Estructura de JWT -->
+            <div class="card info-card mb-4">
+                <div class="card-body">
+                    <h2 class="card-title"><i class="fas fa-code me-2"></i>Estructura de un JWT</h2>
+                    <p>Un JWT se compone de tres partes separadas por puntos (.) y serializadas en Base64:</p>
+                    
+                    <div class="row mt-3">
+                        <div class="col-md-4 mb-3">
+                            <div class="card h-100 part-card header-card">
+                                <div class="card-body">
+                                    <h5 class="card-title"><i class="fas fa-heading me-2"></i>Encabezado</h5>
+                                    <p class="card-text">Contiene el tipo de token y el algoritmo utilizado para la firma.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <div class="card h-100 part-card payload-card">
+                                <div class="card-body">
+                                    <h5 class="card-title"><i class="fas fa-database me-2"></i>Carga útil</h5>
+                                    <p class="card-text">Almacena los datos relevantes del usuario, como su identidad o permisos.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <div class="card h-100 part-card signature-card">
+                                <div class="card-body">
+                                    <h5 class="card-title"><i class="fas fa-signature me-2"></i>Firma</h5>
+                                    <p class="card-text">Generada a partir del encabezado y la carga útil, utilizando una clave secreta.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ejemplo de JWT -->
+            <div class="card info-card">
+                <div class="card-body">
+                    <h2 class="card-title"><i class="fas fa-file-code me-2"></i>Ejemplo de JWT</h2>
+                    <div class="jwt-code mt-3">
+<span class="part-header">eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9</span>.<span class="part-payload">eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaGFuIjoiMjMwfQ</span>.<span class="part-signature">SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c</span>
+                    </div>
+                    <p class="mt-3">Este ejemplo muestra un JWT con:</p>
+                    <ul>
+                        <li><strong>Encabezado:</strong> Indica el algoritmo de firma (HS256) y tipo (JWT)</li>
+                        <li><strong>Carga útil:</strong> Contiene información del usuario (ID y nombre)</li>
+                        <li><strong>Firma:</strong> Generada a partir de las otras dos partes</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Divider (visible only on lg screens) -->
+        <div class="col-lg-1 section-divider d-none d-lg-block"></div>
+
+        <!-- Columna Derecha - Detalles Técnicos -->
+        <div class="col-lg-5 ps-lg-4">
+            <!-- Funcionamiento -->
+            <div class="card info-card mb-4">
+                <div class="card-body">
+                    <h2 class="card-title"><i class="fas fa-cogs me-2"></i>Funcionamiento</h2>
+                    
+                    <div class="d-flex align-items-start mb-3">
+                        <div class="me-3 text-primary">
+                            <i class="fas fa-user-check fa-2x"></i>
+                        </div>
+                        <div>
+                            <h5>Autenticación</h5>
+                            <p class="mb-0">El servidor genera un JWT al iniciar sesión y el cliente lo incluye en cada solicitud posterior.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="d-flex align-items-start mb-3">
+                        <div class="me-3 text-info">
+                            <i class="fas fa-exchange-alt fa-2x"></i>
+                        </div>
+                        <div>
+                            <h5>Intercambio de Información</h5>
+                            <p class="mb-0">Útil para transferir datos entre servicios de manera segura.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="d-flex align-items-start">
+                        <div class="me-3 text-success">
+                            <i class="fas fa-shield-alt fa-2x"></i>
+                        </div>
+                        <div>
+                            <h5>Seguridad</h5>
+                            <p class="mb-0">La firma digital verifica la autenticidad del emisor y la integridad del contenido.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ventajas/Desventajas -->
+            <div class="card info-card mb-4">
+                <div class="card-body">
+                    <h2 class="card-title"><i class="fas fa-balance-scale me-2"></i>Pros y Contras</h2>
+                    
+                    <div class="row mt-3">
+                        <div class="col-md-6 mb-3">
+                            <div class="card h-100 border-success">
+                                <div class="card-body">
+                                    <h5 class="text-success"><i class="fas fa-check me-2"></i>Ventajas</h5>
+                                    <ul class="mt-3">
+                                        <li>Compacto y autocontenido</li>
+                                        <li>Seguridad con firma digital</li>
+                                        <li>Flexibilidad en algoritmos</li>
+                                        <li>Escalabilidad para apps sin estado</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card h-100 border-danger">
+                                <div class="card-body">
+                                    <h5 class="text-danger"><i class="fas fa-times me-2"></i>Desventajas</h5>
+                                    <ul class="mt-3">
+                                        <li>Complejidad en manejo de claves</li>
+                                        <li>Vulnerable si clave es comprometida</li>
+                                        <li>No cifrado por defecto</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Aplicaciones -->
+            <div class="card info-card">
+                <div class="card-body">
+                    <h2 class="card-title"><i class="fas fa-laptop-code me-2"></i>Aplicaciones</h2>
+                    <ul class="feature-list mt-3">
+                        <li>
+                            <i class="fas fa-user-shield text-primary me-2"></i>
+                            <strong>Autenticación y Autorización:</strong> Gestión de acceso en apps web/móviles
+                        </li>
+                        <li>
+                            <i class="fas fa-sync-alt text-info me-2"></i>
+                            <strong>Intercambio de Información Segura:</strong> Transferencia de datos entre servicios
+                        </li>
+                        <li>
+                            <i class="fas fa-sign-in-alt text-success me-2"></i>
+                            <strong>Single Sign-On (SSO):</strong> Sistemas de inicio de sesión único
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Footer -->
+<footer class="footer text-center">
+    <div class="container">
+        <p class="mb-0">Janette Valenzuela González</p>
+        <a class="a_footer" href="#">Volver arriba</a>
+    </div>
+</footer>
+
+</body>
+
+
+    <!-- SCRIPTS -->
+        <!-- Bootstrap core JavaScript
+        ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script>window.jQuery || document.write('<script src="../dist/jquery-slim.min.js"><\/script>')</script>
+        <script src="dist/popper.min.js"></script>
+        <script src="dist/bootstrap.min.js"></script>
+        <script src="dist/holder.min.js"></script>
+        <script>
+            Holder.addTheme('thumb', {
+            bg: '#55595c',
+            fg: '#eceeef',
+            text: 'Thumbnail'
+            });
+        </script>
+
+        <!-- Bootstrap JS Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script>
+            // Activar tooltips
+            var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+            var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+                return new bootstrap.Tooltip(tooltipTriggerEl)
+            });
+        </script>
+
+        <!-- Script para galería simple -->
+    <script>
+        // Abrir imágenes en modal al hacer clic
+        document.querySelectorAll('.gallery-img').forEach(img => {
+            img.addEventListener('click', function() {
+                const modal = `
+                <div class="modal fade" id="imageModal" tabindex="-1" aria-hidden="true">
+                    <div class="modal-dialog modal-lg modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-body text-center">
+                                <img src="${this.src}" class="img-fluid">
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>`;
+                
+                document.body.insertAdjacentHTML('beforeend', modal);
+                const imageModal = new bootstrap.Modal(document.getElementById('imageModal'));
+                imageModal.show();
+                
+                // Eliminar el modal después de cerrar
+                document.getElementById('imageModal').addEventListener('hidden.bs.modal', function() {
+                    this.remove();
+                });
+            });
+        });
+    </script>
+    </body>
+</html>
