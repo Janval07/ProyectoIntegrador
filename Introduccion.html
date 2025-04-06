@@ -8,283 +8,283 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="icon" href="img/microservicios.png" type="image/x-icon">
+    <link rel="icon" href="img/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="css/Informacion.css">
     <title>Introducción</title>
 </head>
 
 <body>
+
     <!-- Barra de Navegación -->
     <nav class="site-header sticky-top py-4 navbar navbar-expand-md navbar-dark bg-dark">
-        <div class="container">
-        <a class="navbar-brand py-2" href="Index.html"> 
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="d-block mx-auto">
-                <circle cx="12" cy="12" r="10"></circle>
-                <line x1="14.31" y1="8" x2="20.05" y2="17.94"></line>
-                <line x1="9.69" y1="8" x2="21.17" y2="8"></line>
-                <line x1="7.38" y1="12" x2="13.12" y2="2.06"></line>
-                <line x1="9.69" y1="16" x2="3.95" y2="6.06"></line>
-                <line x1="14.31" y1="16" x2="2.83" y2="16"></line>
-                <line x1="16.62" y1="12" x2="10.88" y2="21.94"></line>
-            </svg>
-        </a>
-        
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        
-        <div class="collapse navbar-collapse" id="navbarContent">
-            <ul class="navbar-nav me-auto">
-                <li class="nav-item">
-                    <a class="nav-link py-2 px-3" href="Introduccion.html">Inicio</a>
-                </li>
-                
-                <!-- Menú desplegable para protocolos -->
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle py-2 px-3" href="#" id="protocolsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Protocolos
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="protocolsDropdown">
-                        <li><a class="dropdown-item" href="PagHTTP.html">HTTP/HTTPS</a></li>
-                        <li><a class="dropdown-item" href="PagSOAP.html">SOAP</a></li>
-                        <li><a class="dropdown-item" href="PagREST.html">REST</a></li>
-                        <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="PagJWT.html">JWT</a></li>
-                        <li><a class="dropdown-item" href="PagJSON.html">JSON Web Token</a></li>
-                    </ul>
-                </li>
-                
-                <!-- Menú desplegable para arquitecturas -->
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle py-2 px-3" href="#" id="architectureDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Arquitecturas
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="architectureDropdown">
-                        <li><a class="dropdown-item" href="PagMicroservicios.html">Microservicios</a></li>
-                        <li><a class="dropdown-item" href="PagAPI.html">Desarrollo API</a></li>
-                    </ul>
-                </li>
-                
-                <!-- Menú desplegable para contenedores -->
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle py-2 px-3" href="#" id="containersDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Contenedores
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="containersDropdown">
-                        <li><a class="dropdown-item" href="PagDocker.html">Docker</a></li>
-                        <li><a class="dropdown-item" href="#">Kubernetes</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </div>
+        <div class="container d-flex justify-content-between align-items-center">
+            <button class="navbar-toggler order-md-1" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <a class="navbar-brand py-2 order-md-0 mx-auto" href="Index.html"> 
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="d-block mx-auto">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <line x1="14.31" y1="8" x2="20.05" y2="17.94"></line>
+                    <line x1="9.69" y1="8" x2="21.17" y2="8"></line>
+                    <line x1="7.38" y1="12" x2="13.12" y2="2.06"></line>
+                    <line x1="9.69" y1="16" x2="3.95" y2="6.06"></line>
+                    <line x1="14.31" y1="16" x2="2.83" y2="16"></line>
+                    <line x1="16.62" y1="12" x2="10.88" y2="21.94"></line>
+                </svg>
+            </a>
+            
+            <div class="collapse navbar-collapse order-md-2" id="navbarContent">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link py-2 px-3" href="Introduccion.html">Inicio</a>
+                    </li>
+                    
+                    <!-- Menú desplegable para protocolos -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle py-2 px-3" href="#" id="protocolsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Protocolos
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="protocolsDropdown">
+                            <li><a class="dropdown-item" href="PagHTTP.html">HTTP/HTTPS</a></li>
+                            <li><a class="dropdown-item" href="PagSOAP.html">SOAP</a></li>
+                            <li><a class="dropdown-item" href="PagREST.html">REST</a></li>
+                            <li><a class="dropdown-item" href="PagJWT.html">JWT</a></li>
+                        </ul>
+                    </li>
+                    
+                    <!-- Menú desplegable para arquitecturas -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle py-2 px-3" href="#" id="architectureDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Arquitecturas
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="architectureDropdown">
+                            <li><a class="dropdown-item" href="PagMicroservicios.html">Microservicios</a></li>
+                            <li><a class="dropdown-item" href="PagAPI.html">Desarrollo API</a></li>
+                            <li><a class="dropdown-item" href="PagNube.html">Desarrollo en la Nube</a></li>
+                        </ul>
+                    </li>
+                    
+                    <!-- Menú desplegable para contenedores -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle py-2 px-3" href="#" id="containersDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Contenedores
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="containersDropdown">
+                            <li><a class="dropdown-item" href="PagDocker.html">Docker</a></li>
+                            <li><a class="dropdown-item" href="PagKubernetes.html">Kubernetes</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
         </div>
     </nav>
     
 
     <!-- Información -->
     <div class="position-relative overflow-hidden p-5 p-md-5 m-md-5 text-center bg-light" 
-      style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
-      url('https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+        style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+        url('https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
             background-size: cover;
             background-position: center;">
-    <div class="col-md-5 p-lg-5 mx-auto my-5 position-relative text-white">
-        <h1 class="display-4 font-weight-normal">Bienvenido a nuestra plataforma de tecnología</h1>
-        <p class="lead font-weight-normal">Nuestro objetivo es brindarte una visión completa de cómo estas tecnologías están cambiando la forma en que interactuamos y desarrollamos aplicaciones en Internet. ¡Explora cada tema en detalle en nuestras páginas siguientes!</p>
+        <div class="col-md-5 p-lg-5 mx-auto my-5 position-relative text-white">
+            <h1 class="display-4 font-weight-normal">Bienvenido a nuestra plataforma de tecnología</h1>
+            <p class="lead font-weight-normal">Nuestro objetivo es brindarte una visión completa de cómo estas tecnologías están cambiando la forma en que interactuamos y desarrollamos aplicaciones en Internet. ¡Explora cada tema en detalle en nuestras páginas siguientes!</p>
+        </div>
     </div>
-</div>
 
-  <!-- Hero Section -->
-  <section class="hero-section text-center">
-    <div class="container">
-        <p class="lead"></p>
-    </div>
-</section>
+    <!-- Hero Section -->
+    <section class="hero-section text-center">
+        <div class="container">
+            <p class="lead"></p>
+        </div>
+    </section>
 
 <!-- Main Content -->
 
 <div class="container">
-  <div class="row">
-      <div class="col-lg-8 mx-auto">
-          <p class="lead mb-4">En el mundo de la tecnología, existen varios conceptos y herramientas fundamentales que permiten desarrollar, implementar y gestionar sistemas complejos de manera eficiente. A continuación, exploraremos algunos de los temas más relevantes en el ámbito de la informática y el desarrollo de software.</p>
-          
-          <h2 class="text-center mb-4">Temas Destacados</h2>
-          
-          <!-- Navigation Pills -->
-          <ul class="nav nav-pills mb-5 justify-content-center" id="myTab" role="tablist">
-              <li class="nav-item" role="presentation">
-                  <button class="nav-link active" id="web-tab" data-bs-toggle="pill" data-bs-target="#web" type="button" role="tab">Web</button>
-              </li>
-              <li class="nav-item" role="presentation">
-                  <button class="nav-link" id="security-tab" data-bs-toggle="pill" data-bs-target="#security" type="button" role="tab">Seguridad</button>
-              </li>
-              <li class="nav-item" role="presentation">
-                  <button class="nav-link" id="architecture-tab" data-bs-toggle="pill" data-bs-target="#architecture" type="button" role="tab">Arquitectura</button>
-              </li>
-          </ul>
-          
-          <!-- Tab Content -->
-          <div class="tab-content" id="myTabContent">
-              <div class="tab-pane fade show active" id="web" role="tabpanel">
-                  <div class="row">
-                      <!-- HTTP/HTTPS Card -->
-                      <div class="col-md-6">
-                          <div class="card topic-card h-100">
-                              <div class="card-body">
-                                  <div class="topic-icon">
-                                      <i class="fas fa-globe"></i>
-                                  </div>
-                                  <h3 class="card-title">HTTP y HTTPS</h3>
-                                  <h6 class="card-subtitle mb-2 text-muted">Protocolos de Comunicación Web</h6>
-                                  <p class="card-text">HTTP es la base de la comunicación web, mientras que HTTPS agrega seguridad mediante cifrado.</p>
-                                  <div class="alert alert-info mt-3">
-                                      <strong>Importancia:</strong> Esencial para entender cómo funcionan los sitios web y las aplicaciones en línea.
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                      
-                      <!-- SOAP Card -->
-                      <div class="col-md-6">
-                          <div class="card topic-card h-100">
-                              <div class="card-body">
-                                  <div class="topic-icon">
-                                      <i class="fas fa-exchange-alt"></i>
-                                  </div>
-                                  <h3 class="card-title">SOAP</h3>
-                                  <h6 class="card-subtitle mb-2 text-muted">Protocolo de Comunicación Basado en XML</h6>
-                                  <p class="card-text">Permite el intercambio de información entre sistemas distribuidos.</p>
-                                  <div class="alert alert-success mt-3">
-                                      <strong>Ventajas:</strong> Ofrece seguridad y interoperabilidad en entornos complejos.
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-              
-              <div class="tab-pane fade" id="security" role="tabpanel">
-                  <div class="row">
-                      <!-- JWT Card -->
-                      <div class="col-md-6">
-                          <div class="card topic-card h-100">
-                              <div class="card-body">
-                                  <div class="topic-icon">
-                                      <i class="fas fa-key"></i>
-                                  </div>
-                                  <h3 class="card-title">JWT (JSON Web Tokens)</h3>
-                                  <h6 class="card-subtitle mb-2 text-muted">Estándar para Transmisión Segura de Información</h6>
-                                  <p class="card-text">Utiliza firma digital para garantizar autenticidad e integridad.</p>
-                                  <div class="alert alert-warning mt-3">
-                                      <strong>Aplicaciones:</strong> Ideal para autenticación y autorización en sistemas modernos.
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                      
-                      <!-- APIs Card -->
-                      <div class="col-md-6">
-                          <div class="card topic-card h-100">
-                              <div class="card-body">
-                                  <div class="topic-icon">
-                                      <i class="fas fa-plug"></i>
-                                  </div>
-                                  <h3 class="card-title">APIs</h3>
-                                  <h6 class="card-subtitle mb-2 text-muted">Application Programming Interfaces</h6>
-                                  <p class="card-text">Interfaz para Intercambio de Datos y Funcionalidades: Fundamental para integrar aplicaciones y servicios.</p>
-                                  <div class="alert alert-success mt-3">
-                                      <strong>Ventajas:</strong> Facilita la automatización y la innovación tecnológica.
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-              
-              <div class="tab-pane fade" id="architecture" role="tabpanel">
-                  <div class="row">
-                      <!-- Microservicios Card -->
-                      <div class="col-md-6">
-                          <div class="card topic-card h-100">
-                              <div class="card-body">
-                                  <div class="topic-icon">
-                                      <i class="fas fa-cubes"></i>
-                                  </div>
-                                  <h3 class="card-title">Microservicios</h3>
-                                  <h6 class="card-subtitle mb-2 text-muted">Arquitectura de Aplicaciones Modulares</h6>
-                                  <p class="card-text">Divide una aplicación en componentes independientes que se comunican mediante APIs.</p>
-                                  <div class="alert alert-info mt-3">
-                                      <strong>Beneficios:</strong> Mayor escalabilidad, resiliencia y flexibilidad tecnológica.
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                      
-                      <!-- Docker/Kubernetes Card -->
-                      <div class="col-md-6">
-                          <div class="card topic-card h-100">
-                              <div class="card-body">
-                                  <div class="topic-icon">
-                                      <i class="fab fa-docker"></i>
-                                  </div>
-                                  <h3 class="card-title">Docker y Kubernetes</h3>
-                                  <h6 class="card-subtitle mb-2 text-muted">Herramientas para Contenedores y Orquestación</h6>
-                                  <p class="card-text">Docker empaqueta aplicaciones en contenedores, mientras que Kubernetes gestiona su despliegue y escalado.</p>
-                                  <div class="alert alert-success mt-3">
-                                      <strong>Beneficios:</strong> Ofrecen una solución escalable y eficiente para aplicaciones modernas.
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-          </div>
-          
-          <div class="text-center mt-5">
-              <p class="lead">En los siguientes artículos, exploraremos cada uno de estos temas con más detalle, analizando sus características, ventajas, desventajas y aplicaciones prácticas en el mundo real.</p>
-              
-          </div>
-      </div>
-  </div>
+    <div class="row">
+        <div class="col-lg-8 mx-auto">
+            <p class="lead mb-4">En el mundo de la tecnología, existen varios conceptos y herramientas fundamentales que permiten desarrollar, implementar y gestionar sistemas complejos de manera eficiente. A continuación, exploraremos algunos de los temas más relevantes en el ámbito de la informática y el desarrollo de software.</p>
+            
+            <h2 class="text-center mb-4">Temas Destacados</h2>
+            
+            <!-- Navigation Pills -->
+            <ul class="nav nav-pills mb-5 justify-content-center" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="web-tab" data-bs-toggle="pill" data-bs-target="#web" type="button" role="tab">Web</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="security-tab" data-bs-toggle="pill" data-bs-target="#security" type="button" role="tab">Seguridad</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="architecture-tab" data-bs-toggle="pill" data-bs-target="#architecture" type="button" role="tab">Arquitectura</button>
+                </li>
+            </ul>
+            
+            <!-- Tab Content -->
+            <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="web" role="tabpanel">
+                    <div class="row">
+                        <!-- HTTP/HTTPS Card -->
+                        <div class="col-md-6">
+                            <div class="card topic-card h-100">
+                                <div class="card-body">
+                                    <div class="topic-icon">
+                                        <i class="fas fa-globe"></i>
+                                    </div>
+                                    <h3 class="card-title">HTTP y HTTPS</h3>
+                                    <h6 class="card-subtitle mb-2 text-muted">Protocolos de Comunicación Web</h6>
+                                    <p class="card-text">HTTP es la base de la comunicación web, mientras que HTTPS agrega seguridad mediante cifrado.</p>
+                                    <div class="alert alert-info mt-3">
+                                        <strong>Importancia:</strong> Esencial para entender cómo funcionan los sitios web y las aplicaciones en línea.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- SOAP Card -->
+                        <div class="col-md-6">
+                            <div class="card topic-card h-100">
+                                <div class="card-body">
+                                    <div class="topic-icon">
+                                        <i class="fas fa-exchange-alt"></i>
+                                    </div>
+                                    <h3 class="card-title">SOAP</h3>
+                                    <h6 class="card-subtitle mb-2 text-muted">Protocolo de Comunicación Basado en XML</h6>
+                                    <p class="card-text">Permite el intercambio de información entre sistemas distribuidos.</p>
+                                    <div class="alert alert-success mt-3">
+                                        <strong>Ventajas:</strong> Ofrece seguridad y interoperabilidad en entornos complejos.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="tab-pane fade" id="security" role="tabpanel">
+                    <div class="row">
+                        <!-- JWT Card -->
+                        <div class="col-md-6">
+                            <div class="card topic-card h-100">
+                                <div class="card-body">
+                                    <div class="topic-icon">
+                                        <i class="fas fa-key"></i>
+                                    </div>
+                                    <h3 class="card-title">JWT (JSON Web Tokens)</h3>
+                                    <h6 class="card-subtitle mb-2 text-muted">Estándar para Transmisión Segura de Información</h6>
+                                    <p class="card-text">Utiliza firma digital para garantizar autenticidad e integridad.</p>
+                                    <div class="alert alert-warning mt-3">
+                                        <strong>Aplicaciones:</strong> Ideal para autenticación y autorización en sistemas modernos.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- APIs Card -->
+                        <div class="col-md-6">
+                            <div class="card topic-card h-100">
+                                <div class="card-body">
+                                    <div class="topic-icon">
+                                        <i class="fas fa-plug"></i>
+                                    </div>
+                                    <h3 class="card-title">APIs</h3>
+                                    <h6 class="card-subtitle mb-2 text-muted">Application Programming Interfaces</h6>
+                                    <p class="card-text">Interfaz para Intercambio de Datos y Funcionalidades: Fundamental para integrar aplicaciones y servicios.</p>
+                                    <div class="alert alert-success mt-3">
+                                        <strong>Ventajas:</strong> Facilita la automatización y la innovación tecnológica.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="tab-pane fade" id="architecture" role="tabpanel">
+                    <div class="row">
+                        <!-- Microservicios Card -->
+                        <div class="col-md-6">
+                            <div class="card topic-card h-100">
+                                <div class="card-body">
+                                    <div class="topic-icon">
+                                        <i class="fas fa-cubes"></i>
+                                    </div>
+                                    <h3 class="card-title">Microservicios</h3>
+                                    <h6 class="card-subtitle mb-2 text-muted">Arquitectura de Aplicaciones Modulares</h6>
+                                    <p class="card-text">Divide una aplicación en componentes independientes que se comunican mediante APIs.</p>
+                                    <div class="alert alert-info mt-3">
+                                        <strong>Beneficios:</strong> Mayor escalabilidad, resiliencia y flexibilidad tecnológica.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Docker/Kubernetes Card -->
+                        <div class="col-md-6">
+                            <div class="card topic-card h-100">
+                                <div class="card-body">
+                                    <div class="topic-icon">
+                                        <i class="fab fa-docker"></i>
+                                    </div>
+                                    <h3 class="card-title">Docker y Kubernetes</h3>
+                                    <h6 class="card-subtitle mb-2 text-muted">Herramientas para Contenedores y Orquestación</h6>
+                                    <p class="card-text">Docker empaqueta aplicaciones en contenedores, mientras que Kubernetes gestiona su despliegue y escalado.</p>
+                                    <div class="alert alert-success mt-3">
+                                        <strong>Beneficios:</strong> Ofrecen una solución escalable y eficiente para aplicaciones modernas.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-5">
+                <p class="lead">En los siguientes artículos, exploraremos cada uno de estos temas con más detalle, analizando sus características, ventajas, desventajas y aplicaciones prácticas en el mundo real.</p>
+                
+            </div>
+        </div>
+    </div>
 </div>
 
 
 <!-- Footer -->
-<footer class="footer text-center">
-  <div class="container">
-      <p class="mb-0">Janette Valenzuela González</p>
-      <a class="a_footer" href="#">Volver arriba</a>
-  </div>
+<footer class="site-footer">
+    <div class="container text-center">
+        <p class="mb-0" style="color: #a2a3ae;">Janette Valenzuela González</p>
+        <a class="a_footer" href="#">Volver arriba</a>
+    </div>
 </footer>
 
 </body>
 
 
-  <!-- SCRIPTS -->
-      <!-- Bootstrap core JavaScript
-      ================================================== -->
-      <!-- Placed at the end of the document so the pages load faster -->
-      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-      <script>window.jQuery || document.write('<script src="../dist/jquery-slim.min.js"><\/script>')</script>
-      <script src="dist/popper.min.js"></script>
-      <script src="dist/bootstrap.min.js"></script>
-      <script src="dist/holder.min.js"></script>
-      <script>
-        Holder.addTheme('thumb', {
-          bg: '#55595c',
-          fg: '#eceeef',
-          text: 'Thumbnail'
-        });
-      </script>
+    <!-- SCRIPTS -->
+        <!-- Bootstrap core JavaScript
+        ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script>window.jQuery || document.write('<script src="../dist/jquery-slim.min.js"><\/script>')</script>
+        <script src="dist/popper.min.js"></script>
+        <script src="dist/bootstrap.min.js"></script>
+        <script src="dist/holder.min.js"></script>
+        <script>
+            Holder.addTheme('thumb', {
+            bg: '#55595c',
+            fg: '#eceeef',
+            text: 'Thumbnail'
+            });
+        </script>
 
-      <!-- Bootstrap JS Bundle with Popper -->
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-      <script>
-          // Activar tooltips
-          var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
-          var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
-              return new bootstrap.Tooltip(tooltipTriggerEl)
-          });
-        
-      </script>
+        <!-- Bootstrap JS Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script>
+            // Activar tooltips
+            var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+            var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+                return new bootstrap.Tooltip(tooltipTriggerEl)
+            });
+            
+        </script>
     </body>
 </html>

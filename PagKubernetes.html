@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" href="img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/Informacion.css">
+    <title>Kubernetes</title>
+</head>
+
+<body>
+    <!-- Barra de Navegación -->
+    <nav class="site-header sticky-top py-4 navbar navbar-expand-md navbar-dark bg-dark">
+        <div class="container d-flex justify-content-between align-items-center">
+            <button class="navbar-toggler order-md-1" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <a class="navbar-brand py-2 order-md-0 mx-auto" href="Index.html"> 
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="d-block mx-auto">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <line x1="14.31" y1="8" x2="20.05" y2="17.94"></line>
+                    <line x1="9.69" y1="8" x2="21.17" y2="8"></line>
+                    <line x1="7.38" y1="12" x2="13.12" y2="2.06"></line>
+                    <line x1="9.69" y1="16" x2="3.95" y2="6.06"></line>
+                    <line x1="14.31" y1="16" x2="2.83" y2="16"></line>
+                    <line x1="16.62" y1="12" x2="10.88" y2="21.94"></line>
+                </svg>
+            </a>
+            
+            <div class="collapse navbar-collapse order-md-2" id="navbarContent">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link py-2 px-3" href="Introduccion.html">Inicio</a>
+                    </li>
+                    
+                    <!-- Menú desplegable para protocolos -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle py-2 px-3" href="#" id="protocolsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Protocolos
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="protocolsDropdown">
+                            <li><a class="dropdown-item" href="PagHTTP.html">HTTP/HTTPS</a></li>
+                            <li><a class="dropdown-item" href="PagSOAP.html">SOAP</a></li>
+                            <li><a class="dropdown-item" href="PagREST.html">REST</a></li>
+                            <li><a class="dropdown-item" href="PagJWT.html">JWT</a></li>
+                        </ul>
+                    </li>
+                    
+                    <!-- Menú desplegable para arquitecturas -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle py-2 px-3" href="#" id="architectureDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Arquitecturas
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="architectureDropdown">
+                            <li><a class="dropdown-item" href="PagMicroservicios.html">Microservicios</a></li>
+                            <li><a class="dropdown-item" href="PagAPI.html">Desarrollo API</a></li>
+                            <li><a class="dropdown-item" href="PagNube.html">Desarrollo en la Nube</a></li>
+                        </ul>
+                    </li>
+                    
+                    <!-- Menú desplegable para contenedores -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle py-2 px-3" href="#" id="containersDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Contenedores
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="containersDropdown">
+                            <li><a class="dropdown-item" href="PagDocker.html">Docker</a></li>
+                            <li><a class="dropdown-item" href="PagKubernetes.html">Kubernetes</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+
+    <!-- Información -->
+    <div class="position-relative overflow-hidden p-5 p-md-5 m-md-5 text-center bg-light" 
+        style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+        url('https://cdn.pixabay.com/photo/2024/05/21/19/57/computer-8779036_1280.jpg');
+            background-size: cover;
+            background-position: center;">
+        <div class="col-md-5 p-lg-5 mx-auto my-5 position-relative text-white">
+            <h1 class="display-4 font-weight-normal">Kubernetes</h1>
+        </div>
+    </div>
+
+<!-- Hero Section -->
+    <section class="hero-section text-center">
+        <div class="container">
+            <p class="lead"></p>
+        </div>
+    </section>
+
+    <div class="container mb-5">
+        <!-- Qué es Kubernetes -->
+        <div class="card info-card mb-4">
+            <div class="card-body">
+                <h2 class="card-title"><i class="fas fa-ship me-2"></i>¿Qué es Kubernetes?</h2>
+                <p>Kubernetes (también conocido como K8s) es una plataforma de código abierto para automatizar la implementación, el escalado y la gestión de aplicaciones en contenedores. Originalmente desarrollado por Google y ahora mantenido por la Cloud Native Computing Foundation, Kubernetes se ha convertido en el estándar de facto para la orquestación de contenedores.</p>
+                <img src="https://d33wubrfki0l68.cloudfront.net/2475489eaf20163ec0f54ddc1d92aa8d4c87c96b/e7c81/images/docs/components-of-kubernetes.svg" alt="Arquitectura Kubernetes" class="architecture-img">
+            </div>
+        </div>
+    </div>
+
+<!-- Two Column Layout -->
+<div class="container mb-5">
+    <div class="row">
+        <!-- Columna Izquierda - Conceptos Básicos -->
+        <div class="col-lg-6 pe-lg-4">
+            
+            <!-- Funcionamiento -->
+            <div class="card info-card mb-4">
+                <div class="card-body">
+                    <h2 class="card-title"><i class="fas fa-cogs me-2"></i>Funcionamiento</h2>
+                    
+                    <div class="row mt-3">
+                        <div class="col-md-4 mb-3">
+                            <div class="card h-100 component-card">
+                                <div class="card-body">
+                                    <h5 class="card-title"><i class="fas fa-cubes me-2"></i>Pods</h5>
+                                    <p class="card-text">Unidad básica de implementación en Kubernetes, que puede contener uno o más contenedores</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <div class="card h-100 component-card">
+                                <div class="card-body">
+                                    <h5 class="card-title"><i class="fas fa-server me-2"></i>Nodos</h5>
+                                    <p class="card-text">Máquinas (físicas o virtuales) que ejecutan las cargas de trabajo en el clúster</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <div class="card h-100 component-card">
+                                <div class="card-body">
+                                    <h5 class="card-title"><i class="fas fa-chess-queen me-2"></i>Control Plane</h5>
+                                    <p class="card-text">Componentes que toman decisiones globales sobre el clúster y responden a eventos</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Comparación con Docker Swarm -->
+            <div class="card info-card">
+                <div class="card-body">
+                    <h2 class="card-title"><i class="fas fa-balance-scale me-2"></i>Kubernetes vs Docker Swarm</h2>
+                    <div class="table-responsive mt-3">
+                        <table class="table table-bordered comparison-table">
+                            <thead>
+                                <tr>
+                                    <th>Característica</th>
+                                    <th>Kubernetes</th>
+                                    <th>Docker Swarm</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Complejidad</td>
+                                    <td>Alta (más potente)</td>
+                                    <td>Baja (más simple)</td>
+                                </tr>
+                                <tr>
+                                    <td>Escalabilidad</td>
+                                    <td>Muy alta (5000+ nodos)</td>
+                                    <td>Alta (hasta 1000 nodos)</td>
+                                </tr>
+                                <tr>
+                                    <td>Comunidad</td>
+                                    <td>Muy grande y activa</td>
+                                    <td>Limitada (Docker Inc.)</td>
+                                </tr>
+                                <tr>
+                                    <td>Casos de uso</td>
+                                    <td>Producción a gran escala</td>
+                                    <td>Pequeños despliegues</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div><img src="img/kubernetes2.jpg" alt="">
+            </div>>
+
+        </div>
+
+        <!-- Divider (visible only on lg screens) -->
+        <div class="col-lg-1 section-divider d-none d-lg-block"></div>
+
+        <!-- Columna Derecha - Detalles Técnicos -->
+        <div class="col-lg-5 ps-lg-4">
+            <!-- Ventajas -->
+            <div class="card info-card mb-4">
+                <div class="card-body">
+                    <h2 class="card-title"><i class="fas fa-star me-2"></i>Ventajas</h2>
+                    
+                    <div class="row mt-3">
+                        <div class="col-md-6 mb-3">
+                            <div class="card h-100 advantage-card">
+                                <div class="card-body">
+                                    <h5 class="card-title"><i class="fas fa-expand me-2"></i>Escalabilidad</h5>
+                                    <p class="card-text">Escala aplicaciones horizontalmente con facilidad</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <div class="card h-100 advantage-card">
+                                <div class="card-body">
+                                    <h5 class="card-title"><i class="fas fa-shield-alt me-2"></i>Resiliencia</h5>
+                                    <p class="card-text">Auto-reparación y alta disponibilidad</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <div class="card h-100 advantage-card">
+                                <div class="card-body">
+                                    <h5 class="card-title"><i class="fas fa-cloud me-2"></i>Multi-nube</h5>
+                                    <p class="card-text">Funciona en cualquier entorno de nube</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card h-100 advantage-card">
+                                <div class="card-body">
+                                    <h5 class="card-title"><i class="fas fa-boxes me-2"></i>Ecosistema</h5>
+                                    <p class="card-text">Amplia gama de herramientas y extensiones</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card info-card mb-4">
+                <img src="img/kubernetes1.png" alt="" class="gallery-img">
+            </div>
+
+            <!-- Componentes Clave -->
+            <div class="card info-card mb-4">
+                <div class="card-body">
+                    <h2 class="card-title"><i class="fas fa-puzzle-piece me-2"></i>Componentes Clave</h2>
+                    
+                    <div class="d-flex align-items-start mb-3">
+                        <div class="me-3 text-primary">
+                            <i class="fas fa-cube fa-2x"></i>
+                        </div>
+                        <div>
+                            <h5>Pods</h5>
+                            <p class="mb-0">Unidades más pequeñas y básicas en el modelo de objetos de Kubernetes</p>
+                        </div>
+                    </div>
+                    
+                    <div class="d-flex align-items-start mb-3">
+                        <div class="me-3 text-info">
+                            <i class="fas fa-network-wired fa-2x"></i>
+                        </div>
+                        <div>
+                            <h5>Services</h5>
+                            <p class="mb-0">Abstracción que define un conjunto lógico de Pods y políticas para acceder a ellos</p>
+                        </div>
+                    </div>
+                    
+                    <div class="d-flex align-items-start">
+                        <div class="me-3 text-success">
+                            <i class="fas fa-database fa-2x"></i>
+                        </div>
+                        <div>
+                            <h5>Volumes</h5>
+                            <p class="mb-0">Sistema de almacenamiento persistente para contenedores</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container mb-5">
+    <!-- Ejemplo Práctico -->
+    <div class="card info-card">
+        <div class="card-body">
+            <h2 class="card-title"><i class="fas fa-code me-2"></i>Ejemplo: Despliegue Básico</h2>
+            <p>Archivo YAML para desplegar una aplicación Nginx:</p>
+            
+            <div class="k8s-code mt-3">
+                apiVersion: apps/v1
+                kind: Deployment
+                metadata:
+                name: nginx-deployment
+                labels:
+                app: nginx
+                spec:
+                replicas: 3
+                selector:
+                matchLabels:
+                app: nginx
+                template:
+                metadata:
+                labels:
+                    app: nginx
+                spec:
+                containers:
+                - name: nginx
+                    image: nginx:1.14.2
+                    ports:
+                    - containerPort: 80
+
+                ---
+                apiVersion: v1
+                kind: Service
+                metadata:
+                name: nginx-service
+                spec:
+                selector:
+                app: nginx
+                ports:
+                - protocol: TCP
+                port: 80
+                targetPort: 80
+                type: LoadBalancer
+            </div>
+            
+            <p class="mt-3">Aplicar con: <code>kubectl apply -f deployment.yaml</code></p>
+        </div>
+    </div>
+</div>
+
+
+<!-- Sección Multimedia -->
+<div class="container mb-4">
+    <div class="media-section">
+    
+    <h2 class="text-center mb-4"><i class="fas fa-photo-video me-2"></i>Multimedia</h2>
+    <div class="row">
+        <!-- Video 1 -->
+        <div class="col-md-6 mb-4">
+            <div class="card media-card h-100">
+                <div class="ratio ratio-16x9">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/oTf0KxK1QNo?si=9KfpUnqrZIE3xdxw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">¿QUE ES KUBERNETES?</h5>
+                    <p class="card-text">Explicación sobre lo que es y para que sirve.</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Video 2 -->
+        <div class="col-md-6 mb-4">
+            <div class="card media-card h-100">
+                <div class="ratio ratio-16x9">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/gjRoNFopFig?si=2mNNzeWY1gRvCp2e" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">¿Qué es Docker y Kubernetes?</h5>
+                    <p class="card-text"> Explicaion de lo qué son y cómo funcionan, además te contaremos cómo funciona un contenedor y sus ventajas frente a las máquinas virtuales, qué relación tienen con la arquitectura de microservicios, y cómo Kubernetes y Docker le simplifican la vida a los desarrolladores </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+</div>
+
+<!-- Footer -->
+<footer class="footer text-center">
+    <div class="container">
+        <p class="mb-0">Janette Valenzuela González</p>
+        <a class="a_footer" href="#">Volver arriba</a>
+    </div>
+</footer>
+
+</body>
+
+
+    <!-- SCRIPTS -->
+        <!-- Bootstrap core JavaScript
+        ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script>window.jQuery || document.write('<script src="../dist/jquery-slim.min.js"><\/script>')</script>
+        <script src="dist/popper.min.js"></script>
+        <script src="dist/bootstrap.min.js"></script>
+        <script src="dist/holder.min.js"></script>
+        <script>
+            Holder.addTheme('thumb', {
+            bg: '#55595c',
+            fg: '#eceeef',
+            text: 'Thumbnail'
+            });
+        </script>
+
+        <!-- Bootstrap JS Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script>
+            // Activar tooltips
+            var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+            var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+                return new bootstrap.Tooltip(tooltipTriggerEl)
+            });
+        </script>
+
+        <!-- Script para galería simple -->
+    <script>
+        // Abrir imágenes en modal al hacer clic
+        document.querySelectorAll('.gallery-img').forEach(img => {
+            img.addEventListener('click', function() {
+                const modal = `
+                <div class="modal fade" id="imageModal" tabindex="-1" aria-hidden="true">
+                    <div class="modal-dialog modal-lg modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-body text-center">
+                                <img src="${this.src}" class="img-fluid">
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>`;
+                
+                document.body.insertAdjacentHTML('beforeend', modal);
+                const imageModal = new bootstrap.Modal(document.getElementById('imageModal'));
+                imageModal.show();
+                
+                // Eliminar el modal después de cerrar
+                document.getElementById('imageModal').addEventListener('hidden.bs.modal', function() {
+                    this.remove();
+                });
+            });
+        });
+    </script>
+    </body>
+</html>

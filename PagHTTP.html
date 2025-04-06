@@ -8,7 +8,7 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="icon" href="img/microservicios.png" type="image/x-icon">
+    <link rel="icon" href="img/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="css/Informacion.css">
     <title>HTTP</title>
 </head>
@@ -16,67 +16,66 @@
 <body>
     <!-- Barra de Navegación -->
     <nav class="site-header sticky-top py-4 navbar navbar-expand-md navbar-dark bg-dark">
-        <div class="container">
-        <a class="navbar-brand py-2" href="Index.html"> 
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="d-block mx-auto">
-                <circle cx="12" cy="12" r="10"></circle>
-                <line x1="14.31" y1="8" x2="20.05" y2="17.94"></line>
-                <line x1="9.69" y1="8" x2="21.17" y2="8"></line>
-                <line x1="7.38" y1="12" x2="13.12" y2="2.06"></line>
-                <line x1="9.69" y1="16" x2="3.95" y2="6.06"></line>
-                <line x1="14.31" y1="16" x2="2.83" y2="16"></line>
-                <line x1="16.62" y1="12" x2="10.88" y2="21.94"></line>
-            </svg>
-        </a>
-        
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        
-        <div class="collapse navbar-collapse" id="navbarContent">
-            <ul class="navbar-nav me-auto">
-                <li class="nav-item">
-                    <a class="nav-link py-2 px-3" href="Introduccion.html">Inicio</a>
-                </li>
-                
-                <!-- Menú desplegable para protocolos -->
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle py-2 px-3" href="#" id="protocolsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Protocolos
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="protocolsDropdown">
-                        <li><a class="dropdown-item" href="PagHTTP.html">HTTP/HTTPS</a></li>
-                        <li><a class="dropdown-item" href="PagSOAP.html">SOAP</a></li>
-                        <li><a class="dropdown-item" href="PagREST.html">REST</a></li>
-                        <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="PagJWT.html">JWT</a></li>
-                        <li><a class="dropdown-item" href="PagJSON.html">JSON Web Token</a></li>
-                    </ul>
-                </li>
-                
-                <!-- Menú desplegable para arquitecturas -->
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle py-2 px-3" href="#" id="architectureDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Arquitecturas
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="architectureDropdown">
-                        <li><a class="dropdown-item" href="PagMicroservicios.html">Microservicios</a></li>
-                        <li><a class="dropdown-item" href="PagAPI.html">Desarrollo API</a></li>
-                    </ul>
-                </li>
-                
-                <!-- Menú desplegable para contenedores -->
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle py-2 px-3" href="#" id="containersDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Contenedores
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="containersDropdown">
-                        <li><a class="dropdown-item" href="PagDocker.html">Docker</a></li>
-                        <li><a class="dropdown-item" href="#">Kubernetes</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </div>
+        <div class="container d-flex justify-content-between align-items-center">
+            <button class="navbar-toggler order-md-1" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <a class="navbar-brand py-2 order-md-0 mx-auto" href="Index.html"> 
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="d-block mx-auto">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <line x1="14.31" y1="8" x2="20.05" y2="17.94"></line>
+                    <line x1="9.69" y1="8" x2="21.17" y2="8"></line>
+                    <line x1="7.38" y1="12" x2="13.12" y2="2.06"></line>
+                    <line x1="9.69" y1="16" x2="3.95" y2="6.06"></line>
+                    <line x1="14.31" y1="16" x2="2.83" y2="16"></line>
+                    <line x1="16.62" y1="12" x2="10.88" y2="21.94"></line>
+                </svg>
+            </a>
+            
+            <div class="collapse navbar-collapse order-md-2" id="navbarContent">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link py-2 px-3" href="Introduccion.html">Inicio</a>
+                    </li>
+                    
+                    <!-- Menú desplegable para protocolos -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle py-2 px-3" href="#" id="protocolsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Protocolos
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="protocolsDropdown">
+                            <li><a class="dropdown-item" href="PagHTTP.html">HTTP/HTTPS</a></li>
+                            <li><a class="dropdown-item" href="PagSOAP.html">SOAP</a></li>
+                            <li><a class="dropdown-item" href="PagREST.html">REST</a></li>
+                            <li><a class="dropdown-item" href="PagJWT.html">JWT</a></li>
+                        </ul>
+                    </li>
+                    
+                    <!-- Menú desplegable para arquitecturas -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle py-2 px-3" href="#" id="architectureDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Arquitecturas
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="architectureDropdown">
+                            <li><a class="dropdown-item" href="PagMicroservicios.html">Microservicios</a></li>
+                            <li><a class="dropdown-item" href="PagAPI.html">Desarrollo API</a></li>
+                            <li><a class="dropdown-item" href="PagNube.html">Desarrollo en la Nube</a></li>
+                        </ul>
+                    </li>
+                    
+                    <!-- Menú desplegable para contenedores -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle py-2 px-3" href="#" id="containersDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Contenedores
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="containersDropdown">
+                            <li><a class="dropdown-item" href="PagDocker.html">Docker</a></li>
+                            <li><a class="dropdown-item" href="PagKubernetes.html">Kubernetes</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
         </div>
     </nav>
     
@@ -84,11 +83,11 @@
     <!-- Información -->
     <div class="position-relative overflow-hidden p-5 p-md-5 m-md-5 text-center bg-light" 
         style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
-        url('https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+        url('https://images.unsplash.com/photo-1580927752452-89d86da3fa0a?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
             background-size: cover;
             background-position: center;">
         <div class="col-md-5 p-lg-5 mx-auto my-5 position-relative text-white">
-            <h1 class="display-4 font-weight-normal">Tecnologias Web API</h1>
+            <h1 class="display-4 font-weight-normal">HTTP / HTTPS</h1>
         </div>
     </div>
 
@@ -99,66 +98,7 @@
         </div>
     </section>
 
-<!-- Sección Multimedia -->
-        <div class="container mb-4">
-            <div class="media-section">
 
-            <h2 class="text-center mb-4"><i class="fas fa-photo-video me-2"></i>Multimedia</h2>
-            
-            <div class="row">
-                <!-- Video 1 -->
-                <div class="col-md-6 mb-4">
-                    <div class="card media-card h-100">
-                        <div class="ratio ratio-16x9">
-                            <iframe src="https://www.youtube.com/embed/eesqK59rhGA" title="YouTube video" allowfullscreen></iframe>
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title">Cómo funciona HTTP</h5>
-                            <p class="card-text">Explicación visual del protocolo HTTP y su funcionamiento básico.</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Video 2 -->
-                <div class="col-md-6 mb-4">
-                    <div class="card media-card h-100">
-                        <div class="ratio ratio-16x9">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/3JrY0GcOQ0I?si=mRnlUhfKbjLkwuQd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title">Diferencias HTTP/HTTPS</h5>
-                            <p class="card-text">Comparación entre los protocolos HTTP y HTTPS.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        
-            <!-- Galería de Imágenes -->
-            <h4 class="mt-5 mb-3 text-center"><i class="fas fa-images me-2"></i>Galería</h4>
-            <div class="row g-3">
-                <div class="col-6 col-md-3">
-                    <img src="img/diagramaHTTP.webp" 
-                        alt="Diagrama HTTP" 
-                        class="img-fluid rounded gallery-img">
-                </div>
-                <div class="col-6 col-md-3">
-                    <img src="img/encabezadosHTTP.jpg" 
-                        alt="Encabezados HTTP" 
-                        class="img-fluid rounded gallery-img">
-                </div>
-                <div class="col-6 col-md-3">
-                    <img src="img/comparacionHTTP.webp" 
-                        alt="Comparación HTTP/HTTPS" 
-                        class="img-fluid rounded gallery-img">
-                </div>
-                <div class="col-6 col-md-3">
-                    <img src="img/protocoloHTTP.png" 
-                        alt="Protocolo HTTPS" 
-                        class="img-fluid rounded gallery-img">
-                </div>
-            </div>
-        </div>
-    </div>
 
 <!-- Main Content - HTTP -->
 <div class="container mb-5">
@@ -362,10 +302,77 @@ Content-Type: text/html
                     </div>
                 </div>
             </div>
+
+            <div class="card info-card">
+                <img src="img/httpVShttps.jpg" 
+                alt="Diagrama HTTP" 
+                class="img-fluid rounded gallery-img">
+            </div>
         </div>
     </div>
 </div>
 
+<!-- Sección Multimedia -->
+<div class="container mb-4">
+    <div class="media-section">
+
+    <!-- Galería de Imágenes -->
+    <h2 class="mt-5 mb-3 text-center"><i class="fas fa-images me-2"></i>Galería</h2>
+    <div class="row g-3">
+        <div class="col-6 col-md-3">
+            <img src="img/diagramaHTTP.webp" 
+                alt="Diagrama HTTP" 
+                class="img-fluid rounded gallery-img">
+        </div>
+        <div class="col-6 col-md-3">
+            <img src="img/encabezadosHTTP.jpg" 
+                alt="Encabezados HTTP" 
+                class="img-fluid rounded gallery-img">
+        </div>
+        <div class="col-6 col-md-3">
+            <img src="img/comparacionHTTP.webp" 
+                alt="Comparación HTTP/HTTPS" 
+                class="img-fluid rounded gallery-img">
+        </div>
+        <div class="col-6 col-md-3">
+            <img src="img/protocoloHTTP.png" 
+                alt="Protocolo HTTPS" 
+                class="img-fluid rounded gallery-img">
+        </div>
+    </div>
+
+    <h2 class="text-center mb-4"><i class="fas fa-photo-video me-2"></i>Multimedia</h2>
+    <div class="row">
+        <!-- Video 1 -->
+        <div class="col-md-6 mb-4">
+            <div class="card media-card h-100">
+                <div class="ratio ratio-16x9">
+                    <iframe src="https://www.youtube.com/embed/eesqK59rhGA" title="YouTube video" allowfullscreen></iframe>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Cómo funciona HTTP</h5>
+                    <p class="card-text">Explicación visual del protocolo HTTP y su funcionamiento básico.</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Video 2 -->
+        <div class="col-md-6 mb-4">
+            <div class="card media-card h-100">
+                <div class="ratio ratio-16x9">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/3JrY0GcOQ0I?si=mRnlUhfKbjLkwuQd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Diferencias HTTP/HTTPS</h5>
+                    <p class="card-text">Comparación entre los protocolos HTTP y HTTPS.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+</div>
 
 <!-- Footer -->
 <footer class="footer text-center">

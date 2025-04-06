@@ -26,16 +26,36 @@ a:hover {
 
  html,
  body {
-     height: 100%;
+     height: 100vh;
      margin: 0; /* Elimina el margen por defecto */
      color: #000000; /* Color del texto */
-     background-color: #333; /* Color de fondo en caso de que la imagen no se cargue */
-     background-image: url('../img/fondo3.avif'); /* Cambia esta ruta a la ubicación de tu imagen */
-     background-size: cover; /* Ajusta la imagen para cubrir todo el fondo */
-     background-repeat: no-repeat; /* Evita que la imagen se repita */
-     background-position: center; /* Centra la imagen en el fondo */
+     position: relative;
  }
- 
+
+body::before {
+  content: "";
+  background-image: url('../img/fondo3.avif');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  opacity: 0.5; /* Ajusta la opacidad (0 = transparente, 1 = opaco) */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Lo envía al fondo */
+}
+
+/* Contenido (no afectado por la opacidad) */
+.contenido {
+  position: relative; /* Asegura que esté sobre el fondo */
+  color: black; /* Color del texto (ajústalo según tu fondo) */
+  padding: 20px;
+  text-align: center;
+}
+
  body {
      display: flex;
      justify-content: center;
